@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "187760164389",
+    "firebase_url": "https://marcefirebasechat-57189.firebaseio.com",
+    "project_id": "marcefirebasechat-57189",
+    "storage_bucket": "marcefirebasechat-57189.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187760164389:android:bce33f84b385e35e",
+        "android_client_info": {
+          "package_name": "com.marceme.marcefirebasechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187760164389-1i3nk2u5pd6t2la2o5t4jsfa66952vgq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marceme.marcefirebasechat",
+            "certificate_hash": "4f492536c5ed6271f0c7b8e5870e391ab6e829f4"
+          }
+        },
+        {
+          "client_id": "187760164389-i35cni6lnc0cf5hl3m0dkbi6sopkpek4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBkdBOt0x7ghLouyknTUR4mXE7QwgNylc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187760164389-i35cni6lnc0cf5hl3m0dkbi6sopkpek4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
