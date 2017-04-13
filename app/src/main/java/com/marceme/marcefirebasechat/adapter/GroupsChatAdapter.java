@@ -19,6 +19,7 @@ import com.marceme.marcefirebasechat.FireChatHelper.ExtraIntent;
 import com.marceme.marcefirebasechat.R;
 import com.marceme.marcefirebasechat.model.group;
 import com.marceme.marcefirebasechat.ui.ChatActivity;
+import com.marceme.marcefirebasechat.ui.GroupChatActivity;
 
 import java.util.List;
 
@@ -116,7 +117,7 @@ public class GroupsChatAdapter extends RecyclerView.Adapter<GroupsChatAdapter.Vi
 
 
             group user = mUsers.get(getLayoutPosition());
-           AlertDialog.Builder builder1 = new AlertDialog.Builder(mContext);
+         /*  AlertDialog.Builder builder1 = new AlertDialog.Builder(mContext);
             builder1.setMessage("Recipent: "+user.getRecipientId()+"\n"+mCurrentUserId+"\n "+" "+user.getAdmin());
             builder1.setCancelable(true);
 
@@ -137,13 +138,13 @@ public class GroupsChatAdapter extends RecyclerView.Adapter<GroupsChatAdapter.Vi
                     });
 
             AlertDialog alert11 = builder1.create();
-            alert11.show();
-        /*   Intent chatIntent = new Intent(mContextViewHolder, GroupChatActivity.class);
+            alert11.show();*/
+           Intent chatIntent = new Intent(mContextViewHolder, ChatActivity.class);
             chatIntent.putExtra(ExtraIntent.EXTRA_CURRENT_USER_ID, mCurrentUserId);
             chatIntent.putExtra(ExtraIntent.EXTRA_RECIPIENT_ID, user.getRecipientId());
-            chatIntent.putExtra(ExtraIntent.EXTRA_Admin, user.getAdmin());
-*/
-            //mContextViewHolder.startActivity(chatIntent);
+            chatIntent.putExtra(ExtraIntent.EXTRA_ADMIN, user.getAdmin());
+            chatIntent.putExtra(ExtraIntent.EXTRA_CHAT_REF, user.getDisplayName());
+            mContextViewHolder.startActivity(chatIntent);
 
 
             /*

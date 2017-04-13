@@ -26,7 +26,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ChatActivity extends Activity {
+public class GroupChatActivity extends Activity {
 
     private static final String TAG = ChatActivity.class.getSimpleName();
 
@@ -44,7 +44,6 @@ public class ChatActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
-
         bindButterKnife();
         setDatabaseInstance();
         setUsersId();
@@ -56,11 +55,11 @@ public class ChatActivity extends Activity {
     }
     private void setDatabaseInstance() {
         String chatRef = getIntent().getStringExtra(ExtraIntent.EXTRA_CHAT_REF);
-        if(ExtraIntent.EXTRA_ADMIN.equals("No Admin") ){
-            messageChatDatabase = FirebaseDatabase.getInstance().getReference().child(chatRef);
-        }
-        else
-            messageChatDatabase = FirebaseDatabase.getInstance().getReference("groups").child(chatRef).child("message");
+        messageChatDatabase = FirebaseDatabase.getInstance().getReference().child(chatRef);
+
+/*
+        messageChatDatabase = FirebaseDatabase.getInstance().getReference("groups").child(chatRef).child("message");
+*/
     }
 
     private void setUsersId() {

@@ -133,6 +133,7 @@ public class UsersChatAdapter extends RecyclerView.Adapter<UsersChatAdapter.View
             chatIntent.putExtra(ExtraIntent.EXTRA_CURRENT_USER_ID, mCurrentUserId);
             chatIntent.putExtra(ExtraIntent.EXTRA_RECIPIENT_ID, user.getRecipientId());
             chatIntent.putExtra(ExtraIntent.EXTRA_CHAT_REF, chatRef);
+            chatIntent.putExtra(ExtraIntent.EXTRA_ADMIN, "No Admin");
 
             // Start new activity
             mContextViewHolder.startActivity(chatIntent);
