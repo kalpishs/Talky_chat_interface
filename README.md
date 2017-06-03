@@ -7,13 +7,10 @@
 * Add the google-service.json in your project in Android studio.
 * Make sure your device or emulator is running the latest google-services (3.0.0)
 
-# mChat  app  
+# Talky  app  
 Practicing with a chat app using firebase authentication and real-time database:   
 *	Support different users with user credentials (username and password)
 *	Chat with any user registered in the database.
-
-#Library Used  
-*	[Butter Knife](http://jakewharton.github.io/butterknife/) - Bind view to class member fields
 
 # Android Version
 * 5.0 Lollipop - 6.0 Marshmallow
